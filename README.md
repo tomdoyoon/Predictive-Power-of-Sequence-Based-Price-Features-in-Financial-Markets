@@ -46,6 +46,16 @@ Note that dividend information is not used in the analysis.
 
 This study compared the performance of XGBoost and LSTM models on six different datasets, including five asset classes (US Equity, International Equity, Precious Metals, Commodities) and the S&P 500 index (SPY). The results showed that the XGBoost model performed similarly across all datasets, with accuracy ranging from 0.303 to 0.363, log loss between 1.848 and 1.921, and ROC-AUC scores between 0.576 and 0.658. The LSTM model, trained on the SPY dataset, achieved an accuracy of 0.328, log loss of 1.804, and ROC-AUC of 0.550. Since the LSTM model trained on the SPY dataset did not outperform the XGBoost model, the other datasets were not used to train an LSTM model, as it was deemed unlikely to provide significant performance gains. The accuracy range of around 30% across all models suggests that endogenous price features have a weak ability to predict the following day's price classification. However, this level of accuracy may still be sufficient for a portfolio manager or trader to achieve profitable trading outcomes, depending on their specific setup and risk-reward preferences. This study demonstrates that it is feasible to somewhat predict next-day price classification using price features alone, allowing market participants to structure trading strategies around these features, especially when combined with proper risk management and reward steps.
 
+# Table of Contents
+
+Please refer to the following table of contents to navigate your exploration:
+
+Data Preparation: Reproducible steps for processing raw data.
+
+XGBoost: Application of an XGBoost model to predict price classification (see below).
+
+LSTM: Application of a LSTM model to predict price classification (see below).
+
 # Feature Engineering
 
 ## Price Classification
